@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashtavinayak Computers - Login</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+body {
+    background: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #00000033;
+    background-color: #fff;
+}
+.header-title {
+    font-size: 2.5rem;
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-container {
+    padding: 20px;
+}
+.card-header {
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="loginPage" class="login-container">
+    <div class="header-title">Ashtavinayak Computers</div>
+    <div class="form-group">
+        <label>Username:</label>
+        <input type="text" id="username" class="form-control" placeholder="Enter Username">
+    </div>
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter Password">
+    </div>
+    <button onclick="login()" class="btn btn-primary btn-block">Login</button>
+    <p id="loginError" class="text-danger mt-2 text-center"></p>
+</div>
+
+<!-- Main Page -->
+<div id="mainPage" class="main-container" style="display:none;">
+    <div class="row mb-4">
+        <div class="col-md-12 text-center">
+            <h1 class="header-title">Welcome to Ashtavinayak Computers</h1>
+            <button class="btn btn-danger" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+
+</hr>
+</br></br>
+    <div class="row pd">
+        <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b> OTHER LINK</b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li ><a href="https://eshram.gov.in/"style="font-size:25px;">Eshram Card </a> </br>
+                        <li ><a href="https://www.cowin.gov.in/"style="font-size:25px;">Vaccany Card </a> </br>
+                        <li ><a href="https://epassmsdma.mahait.org/login.htm"style="font-size:25px;">Universal Pass </a> </br>
+                        <li ><a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/"style="font-size:25px;">PF Login </a> </br>
+                        <li><a href="https://pcs.mahaonline.gov.in/Forms/Home.aspx"style="font-size:25px;">Charactor Certificate</a> </br></li>
+                        <li><a href="https://www.passportindia.gov.in/AppOnlineProject/welcomeLink"style="font-size:25px;">Passport Seva</a> </br></li>
+                        <li ><a href="https://pmkisan.gov.in/"style="font-size:25px;">PM Kisan KYC </a> </br>
+                        <li ><a href="https://udyog.mahaswayam.gov.in/#/home"style="font-size:25px;">Annasaheb Patil Mahamadal </a> </br>
+	     
+                    </ol>
+                </div>
+            </div>
+        </div>
+ <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b>ADHAAR CARD SERVICES</b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li ><a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar"style="font-size:25px;">Eadhaar Card Download </a> </br>
+                        <li><a href="https://resident.uidai.gov.in/bank-mapper" style="font-size:23px;">Adhaar Card/Bank Link Status</a></br></li>
+                        <li><a href="https://myaadhaar.uidai.gov.in/CheckAadhaarStatus"style="font-size:25px;">Check Adhaar Statusl</a> </br></li>
+			<li><a href="https://myaadhaar.uidai.gov.in/genricPVC"style="font-size:25px;"> Adhar PVC ORDER</a> </br></li>    
+                        <li><a href="https://uidai.gov.in/images/commdoc/List_of_Acceptable_documents_July2022.pdf"style="font-size:25px;"> Update Form </a> </br></li>
+	<li><p><a href="F:\website\adhar.pdf" style="font-size:25px;"> Adhaar Update / Correction form </a></p></li> 	 
+
+		 </ol>
+                </div>
+            </div>
+        </div>       
+   
+<div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b>Internet Cafe Form </b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li><p><a href="https://rojgar.mahaswayam.gov.in/" style="font-size:25px;"> Employment Registration </a></p></li>
+                        <li><A href="https://www.swavlambancard.gov.in/" style="font-size:25px;"><align="center">Disability ID Card</A></br></li>
+                        <li><p><a href="https://maha-cmegp.gov.in/homepage" style="font-size:25px;"> DIC LOAN CMEGP  </a></p></li>
+                        <li><p><a href="https://mahadbtmahait.gov.in/Login/Login" style="font-size:25px;"> Scholership Form </a></p></li>       
+ 	           
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b> ONLINE SERVICES PORTAL </b>
+                </div>
+                <div class="card-body">
+                <ol>
+                        <li><a href="https://aaplesarkar.mahaonline.gov.in/en"style="font-size:25px;">Shopact Lienses </a> </br></li>
+                        <li><A href="https://aaplesarkar.mahaonline.gov.in/en" style="font-size:25px;"><align="center">egazatte Certificate</A></br></li>
+                        <li><a href="https://foscos.fssai.gov.in/" style="font-size:25px;">Food Lienses </a></br></li>
+                        <li><a href="https://reg.gst.gov.in/registration/"style="font-size:25px;">GST Registration</a> </br> </li>
+                        <li><a href="https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do"style="font-size:25px;">Driving Lienses </a> </br></li>
+                        <li><a href="https://udyamregistration.gov.in/Government-India/Ministry-MSME-registration.htm"style="font-size:25px;">Udyam Registation </a> </br></li>
+                        <li><a href="https://bartievalidity.maharashtra.gov.in/"style="font-size:25px;">Caste Validity Registration </a> </br></li>
+                        <li><a href="https://www.nvsp.in/"style="font-size:25px;">Voter Id  </a> </br></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b> ALL GOVERNMENT JOBS PORTAL</b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li><a href="https://www.naukariz.com/"style="font-size:25px;">Naukariz.com</a> </br></li>
+                        <li><A href="https://majhinaukri.in" style="font-size:25px;"><align="center">majhi naukari</A></br></li>
+                        <li><a href="https://center.surreta.com/user/login"style="font-size:25px;">Sureta Job Portal</a> </br></li>
+                        <li><a href="https://www.indgovtjobs.in/"style="font-size:25px;">Ind Govt Job</a> </br></li>
+                        <li><a href="https://www.sarkari-naukri.in/"style="font-size:25px;">Sarkari-Naukari.in</a> </br></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pd">
+        <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b>MONEY TRANSFER</b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li><p><a href="https://www.payeassy.com/Web/Default.aspx" style="font-size:25px;"> Payessay.com (Money Transfer)  </a></p></li>
+                        <li><a href="https://www.bankit.in/" style="font-size:25px;">Bankit (Money Transfer)</a></br></li>
+                        <li><a href="https://agent.rapipay.com/#/auth/login" style="font-size:25px;">Rapipay(Money Transfer)</a></br></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b>Pan Card Form</b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li><p><a href="https://digitalindiaportal.co.in/users/pancard/Form49A.pdf" style="font-size:25px;"> New Pan Card </a></p></li>
+                        <li><p><a href="https://www.incometaxindia.gov.in/documents/form-for-changes-in-pan.pdf" style="font-size:25px;"> Correction form  </a></p></li>
+                        <li><p><a href="https://www.tin-nsdl.com/downloads/pan/Format-of-Gazette-Certificate_03082012.pdf" style="font-size:25px;"> Annexure A for pan card  </a></p></li>
+                        <li><a href="G:\website\new.pdf" style="font-size:25px;">Hospital Janani Surksha</a></br></li>        
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b>BANK ACCOUNT OPEN</b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li><p><a href="https://onlinebanking.bankofmaharashtra.in/CustomerUI/#/login" style="font-size:25px;"> Bank of Maharashtra </a></p></li>
+                        <li><p><a href="https://www.kotak.com/en/home.html" style="font-size:25px;"> Kotak Bank  </a></p></li>
+                        <li><p><a href="https://www.unionbankofindia.co.in/english/saving-account.aspx" style="font-size:25px;"> Union Bank of India  </a></p></li>
+                        <li><a href="https://myaccount.indusind.com/savingsaccount/index.aspx?utm_code=z_mktgcamp&utm_campaign=wc_sa&utm_source=google&utm_medium=search&utm_content=core_bmm&utm_keyword=set%20up%20savings%20account&utm_matchtype=p&gclid=Cj0KCQjwm6KUBhC3ARIsACIwxBgaL0Gj2zRkj2tb4czigRL6UV6Uzaqzoh3EIt62xpvBsSuUJkKucyAaAntvEALw_wcB" style="font-size:25px;">Induslnd Bank </a></br></li>        
+                        <li><p><a href="https://www.bankofbaroda.in/personal-banking/accounts" style="font-size:25px;"> Bank of Baroda </a></p></li>    
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+<div class=" col col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-b">
+                    <b>MAHAESEVA KENDRA </b>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li><p><a href="https://cscservices.mahaonline.gov.in/DashBoard/Login.aspx" style="font-size:25px;"> Mahaeseva kendra  </a></p></li>
+                        <li><p><a href="https://www.setuonline.com/" style="font-size:25px;"> Setuonline.com  </a></p></li>
+                        <li><p><a href="https://www.tin-nsdl.com/downloads/pan/Format-of-Gazette-Certificate_03082012.pdf" style="font-size:25px;"> Annexure A for pan card  </a></p></li>
+                        <li><a href="G:\website\new.pdf" style="font-size:25px;">Hospital Janani Surksha</a></br></li>        
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class=" col col-md-3 col-sm-6">
+      
+
+        </div>
+    </div>
+
+
+<script>
+function login() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if(user === "Admin" && pass === "Pass@123") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("mainPage").style.display = "block";
+    } 
+	if(user === "Shree" && pass === "Pass@123") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("mainPage").style.display = "block";
+    }	
+        if(user === "Amol" && pass === "Pass@1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("mainPage").style.display = "block";
+} else {
+        document.getElementById("loginError").innerText = "Invalid Username or Password!";
+    }
+}
+
+function logout() {
+    document.getElementById("loginPage").style.display = "block";
+    document.getElementById("mainPage").style.display = "none";
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+}
+</script>
+</body>
+</html>
